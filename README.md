@@ -7,7 +7,7 @@ L'hébergement de ces documents sur un dépôt public permet une transparence to
 ## 🔗 Liens Directs
 
 - **Politique de Confidentialité (Privacy Policy)**
-- **Conditions Générales d'Utilisation (Terms of Use)**
+- **[Conditions Générales d'Utilisation (Terms of Use)]([url](https://dfaye97.github.io/Listy-Legal/TERMS_OF_USE_FR))**
 
 ## 🛡️ Engagement pour la Confidentialité (Privacy-First)
 
