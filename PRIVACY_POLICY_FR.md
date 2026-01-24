@@ -1,6 +1,6 @@
 # Politique de Confidentialité et de Protection des Données
 
-**Dernière mise à jour : 20 Janvier 2026**
+**Dernière mise à jour : 23 Janvier 2026**
 **Version : 1.1**
 
 ## 1. Préambule et Engagement
@@ -31,7 +31,7 @@ Nous collectons des données pseudonymisées pour comprendre l'utilisation de l'
 ### 3.3. Données Communautaires (Crowdsourcing)
 Données que vous choisissez de rendre publiques pour aider la communauté.
 *   **Stockage :** Base de données publique iCloud (`CloudKit Public Database`).
-*   **Données :** Associations "Code-barres ↔ Nom du produit ↔ Catégorie".
+*   **Données :** Associations "Code-barres ↔ Nom du produit ↔ Catégorie", Prix (Moyenne et Dernier relevé).
 *   **Finalité :** Alimenter la base de connaissances partagée de l'application.
 
 ## 4. Traitement des Données et Services Tiers
