@@ -1,6 +1,6 @@
 # Conditions Générales d'Utilisation (CGU)
 
-**Dernière mise à jour : 20 Janvier 2026**
+**Dernière mise à jour : 23 Janvier 2026**
 **Version : 1.0**
 
 ## 1. Acceptation des Conditions
