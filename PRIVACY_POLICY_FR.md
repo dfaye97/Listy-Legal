@@ -1,3 +1,5 @@
+**English below**
+
 # Politique de Confidentialité et de Protection des Données
 
 **Dernière mise à jour : 31 Janvier 2026**
@@ -103,3 +105,112 @@ Nous appliquons des mesures de sécurité strictes :
 
 Pour toute demande légale, demande d'exercice de droits ou question sur cette politique :
 *   **Email :** fayedorian@gmail.com
+
+**ENGLISH**
+
+# Privacy Policy and Data Protection
+
+**Last updated: January 31, 2026**
+**Version: 1.2**
+
+## 1. Preamble and Commitment
+This privacy policy (the "Policy") explains how personal data is collected, processed, and protected by the **Listy** application (the "Application"), published by **Dorian Faye** ("We").
+
+We are committed to complying with the EU **GDPR** and the **CCPA** (California Consumer Privacy Act). Your data is stored securely and isolated using strict Row Level Security (RLS) rules.
+
+## 2. Data Controller
+The Data Controller is the developer of the Application.
+For any questions regarding your data, you can contact the Data Protection Officer (DPO) at:
+**fayedorian@gmail.com**
+
+## 3. Categories of Data Collected
+
+We minimize data collection. The data processed falls into the following categories:
+
+### 3.1. Personal Data (Secure Storage)
+This data is stored in your dedicated space on our secure servers (`Supabase`). Access is strictly limited to your user account via RLS.
+*   **Content:** Shopping lists, item names, prices, budgets, list participants, item/receipt photos, scan history (barcode, price, currency, EUR-normalized price, timestamp, category, suspicious flag), profile data (display name, photo), and authentication identifiers.
+*   **Purpose:** Sync across devices, sharing with others, budgeting features, and history retention.
+
+Some preferences and profile information may be synced via **iCloud (NSUbiquitousKeyValueStore)** to ensure continuity across Apple devices.
+
+### 3.2. Technical and Usage Data (Analytics)
+We collect pseudonymized data to understand usage, improve quality, and fix bugs.
+*   **Tool:** **PostHog** (Hosted in the European Union).
+*   **Data:** Anonymous installation ID, screen views, key interactions (e.g., "receipt imported", "unusual price alert"), OS version, device model, technical events.
+*   **Purpose:** Product improvement, stability, detection of abnormal behavior.
+
+### 3.3. Community Data (Crowdsourcing)
+Data you choose to make public to help the community.
+*   **Storage:** Public database (`Supabase Public Tables`).
+*   **Data:** "Barcode <-> Product name <-> Category" associations, brands, public images, **aggregated** prices (average, report count, last seen).
+*   **Purpose:** Power the shared knowledge base of the Application.
+
+### 3.4. Moderation and Abuse-Prevention Data
+To protect the integrity of community data, we apply automated checks.
+*   **Processing:** Price anomaly detection, category-based bounds, suspicious flagging.
+*   **Effects:** Suspicious contributions may be excluded from public aggregates and used to limit access to community features in case of repeated abuse.
+
+## 4. Data Processing and Third-Party Services
+
+The Application relies on carefully selected data processors.
+
+| Service | Data Type | Location | Purpose |
+| :--- | :--- | :--- | :--- |
+| **Supabase** | User content, Auth, community data | Global (AWS) | Secure hosting, authentication, synchronization. |
+| **PostHog** | Usage analytics, telemetry | **European Union** (Frankfurt) | Audience analysis and product improvement. |
+| **Open Food Facts** | Barcode, IP address | Global | Nutritional information retrieval. |
+| **Open Beauty Facts** | Barcode, IP address | Global | Cosmetic information retrieval. |
+| **Frankfurter API** | Currency codes, IP address | Global | Exchange rate retrieval. |
+| **Apple Vision** | Images (receipts) | **Local (On-Device)** | OCR and text extraction. No images are sent to the cloud for this. |
+| **Apple iCloud (KVS)** | Preferences, profile (name/photo, currency) | Global (Apple) | Sync preferences across Apple devices. |
+
+**Open Food Facts / Open Beauty Facts note:**
+Using the barcode scanner sends the scanned code to their public APIs. This request temporarily exposes your IP address to their servers to deliver the response. **No personal identifiers (name, email, user ID) are sent when scanning.**
+
+**Frankfurter API note:**
+Currency conversions use rates published by Frankfurter. These rates are indicative and may differ from real banking rates.
+
+## 5. Legal Bases (GDPR)
+
+*   **Contract performance (Art. 6.1.b):** For synchronization, sharing, and core app functionality.
+*   **Legitimate interest (Art. 6.1.f):** For analytics (PostHog), security, abuse prevention, and community data quality.
+*   **Consent (Art. 6.1.a):** For sensor access (Camera, Photos) and voluntary bug reports.
+
+## 6. International Transfers
+
+*   **PostHog:** Analytics data is hosted in the EU (`eu.i.posthog.com`).
+*   **Supabase:** Data may be processed via AWS (typically Frankfurt or USA). This is covered by industry-standard safeguards.
+*   **Apple iCloud:** Data may be processed in Apple data centers worldwide under their policy.
+
+## 7. Retention
+
+*   **User data (Supabase):** Retained until you delete your account or your data.
+*   **Analytics (PostHog):** Retained for a limited period, then deleted or anonymized.
+*   **Bug reports:** Kept until resolved, max 6 months.
+*   **Community data:** Public aggregates may remain after account deletion in a non-identifying form.
+
+## 8. Your Rights (GDPR & CCPA)
+
+You have the following rights:
+
+1.  **Access and portability:** You can request a copy of your data by contacting us.
+2.  **Rectification:** You can edit your lists directly in the app.
+3.  **Erasure ("Right to be forgotten"):**
+    *   **Content:** You can use the "Delete my account" button in the app settings ("My Profile" section).
+    *   **Analytics:** Contact us to request deletion of your usage history if you no longer use the app.
+    *   **Note:** Some aggregated community data may remain in a non-identifying form.
+4.  **Objection:** You can opt out of analytics by contacting us. **Important:** The app does not use advertising identifiers (IDFA) and does not perform ad tracking under Apple's AppTrackingTransparency.
+
+## 9. Security
+
+We apply strict security measures:
+*   Encrypted communications (HTTPS/TLS) for all external connections.
+*   Authentication relies on Apple ID infrastructure (MFA, biometrics) and Supabase Auth.
+*   Restricted access to development databases.
+
+## 10. Legal Contact
+
+For any legal request, data-rights request, or question about this policy:
+*   **Email:** fayedorian@gmail.com
+
